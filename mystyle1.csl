@@ -13,13 +13,13 @@
   <macro name="author">
     <names variable="author">
       <name sort-separator=", " delimiter=", " and="symbol" initialize-with=". " delimiter-precedes-last="never" name-as-sort-order="all"/>
-      <label form="short" prefix=", "/>
+      <!-- No 'et-al' part, we only show the first author -->
     </names>
   </macro>
   <macro name="issuance">
     <date variable="issued" form="text" prefix="(" suffix=")"/>
   </macro>
-  <bibliography et-al-use-first="1" et-al-min="99">
+  <bibliography>
     <layout prefix=" " suffix="." delimiter=", ">
       <text variable="author" form="long" suffix=", " />
       <text variable="issued" prefix=" " />
